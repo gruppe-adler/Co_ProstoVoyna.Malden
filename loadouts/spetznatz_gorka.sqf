@@ -1,0 +1,52 @@
+this = _this select 0;
+if (!local this) exitWith {};
+comment "Exported from Arsenal by nomisum";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "rhs_uniform_gorka_r_g";
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "ACE_epinephrine";
+for "_i" from 1 to 2 do {this addItemToUniform "ACE_packingBandage";};
+for "_i" from 1 to 6 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 2 do {this addItemToUniform "ACE_EarPlugs";};
+this addItemToUniform "ACE_Flashlight_KSF1";
+this addItemToUniform "ACE_CableTie";
+for "_i" from 1 to 4 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_bloodIV_500";
+this addItemToUniform "rhs_mag_9x18_12_57N181S";
+this addItemToUniform "Laserbatteries";
+this addVest "rhs_6b23_digi_vydra_3m";
+for "_i" from 1 to 4 do {this addItemToVest "rhs_45Rnd_545X39_7N10_AK";};
+for "_i" from 1 to 2 do {this addItemToVest "rhs_45Rnd_545X39_7N22_AK";};
+this addBackpack "rhs_sidor";
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_45Rnd_545X39_7U1_AK";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_45Rnd_545X39_AK_Green";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_45Rnd_545X39_7N22_AK";};
+for "_i" from 1 to 2 do {this addItemToBackpack "Chemlight_red";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_rgd5";};
+this addItemToBackpack "ACE_HandFlare_Red";
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_rdg2_white";};
+this addItemToBackpack "rhs_mag_rdg2_black";
+this addItemToBackpack "rhs_mag_nspn_green";
+this addHeadgear "rhs_6b28_green_bala";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_ak74m_camo";
+this addPrimaryWeaponItem "rhs_acc_2dpZenit";
+this addPrimaryWeaponItem "rhs_acc_1p63";
+this addWeapon "rhs_weap_makarov_pmm";
+this addWeapon "Laserdesignator_03";
+
+comment "Add items";
+this linkItem "ItemWatch";
+this linkItem "tf_fadak";

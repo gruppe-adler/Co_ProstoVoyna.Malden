@@ -1,0 +1,12 @@
+LHD = "CUP_B_LHD_WASP_USMC_Empty" createVehicle [5015.571,845.927,0];
+publicVariable "LHD";
+loudspeaker = "Loudspeakers_EP1" createVehicle [4998.23,928.166,77];
+loudspeaker attachTo [LHD,[17,-98,77]];
+LHD_lamp1 = "Land_Camping_Light_F" createVehicle [4998,950,71];
+LHD_lamp1 attachTo [LHD,[17,-120,73]];
+LHD_lamp2 = "Land_Camping_Light_F" createVehicle [4998,930,71];
+LHD_lamp2 attachTo [LHD,[17,-105,73]];
+LHD_lamp3 = "Land_Camping_Light_F" createVehicle [4998,910,71];
+LHD_lamp3 attachTo [LHD,[17,-90,73]];
+LHD_lamp4 = "Land_Camping_Light_F" createVehicle [4998,890,71];
+LHD_lamp4 attachTo [LHD,[17,-75,73]];

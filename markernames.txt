@@ -1,0 +1,10 @@
+mrk_ind_wholearea = ganzer flughafen
+mrk_ind_vibor
+mrk_ind_kabanino
+mrk_ind_grishino
+mrk_ind_lopatino
+
+
+nul = [this,"yourmarkername"] execVM "scripts\UPSMON.sqf";
+
+nul = [this,"mrk_ind_lopatino","DoRelax"] execVM "scripts\UPSMON.sqf";

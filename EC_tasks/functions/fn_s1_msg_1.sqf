@@ -1,0 +1,4 @@
+[["Вот что командующий российского флота, Валерий Чирков. Эта новость строго конфиденциальной и будет только лично вам . Доведите лимфы мину на приводной вал Uboots взрыва . Пусть это выглядело как несчастный случай . Аварии случаются часто. Также вы что-то может случиться, если вы поделитесь это сообщение со своими товарищами. Мы понимаем.",
+"Hier spricht der Oberkommandeur der russischen Flotte, Valery Tschirkov. Diese Nachricht ist hochgeheim und geht nur an Sie persönlich. Bringen Sie die Haftmine an der Triebwelle des Uboots zur Explosion. Lassen Sie es aussehen wie einen Unfall. Unfälle passieren häufig. Auch Ihnen könnte etwas zustoßen, falls Sie diese Botschaft mit ihren Kameraden teilen. Wir verstehen uns.",
+"gui_message_carrier",
+3100,3101],"common\fx\translateArray.sqf"] remoteExec ["BIS_fnc_execVM",diver_tl,false];

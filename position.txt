@@ -1,0 +1,6 @@
+
+submarine position [13268.6,2338.08,-27.227]
+
+_submarine = "Submarine_01_F" createVehicle (position this);
+
+subbie = (creategroup civilian) create3DENEntity ["Object","Submarine_01_F",screenToWorld [0.5,0.5]];

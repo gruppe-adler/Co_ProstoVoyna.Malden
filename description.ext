@@ -1,0 +1,187 @@
+#include "common\fx\gui\defines.hpp"
+class RscTitles {
+	#include "common\fx\gui\dialogs.hpp"
+};
+
+class CfgFunctions {
+	#include "EC_tasks\cfgFunctions.hpp"
+	#include "player\cfgFunctions.hpp"
+	#include "server\cfgFunctions.hpp"
+	// #include "FUPS\hearing_XEH.hpp"
+};
+
+OnLoadMission = "Co_EagleClaw";
+author = "Nomisum für Gruppe Adler";  //appears as author in overview and loading screen
+overviewText = "Freiheit für Ossetien"; //appears in overview and loading screen
+onLoadName = "Co_EagleClaw"; //mission name for loading screen only
+enableDebugConsole = 1;
+// loadScreen = "pic\loading_pic.jpg";
+
+
+class CfgSounds
+{
+	sounds[] = {speech,typewriter_1,typewriter_2, bongs1, bongs2, bongs3, bongs4, screams2, arkona_zimushka};
+	class speech
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "speech";
+		// filename, volume, pitch
+		sound[] = {"sounds\speech.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_1
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_1";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_1.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_2
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_2";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_2.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_3
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_3";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_3.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_4
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_4";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_4.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_5
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_5";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_5.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_6
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_6";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_6.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_7
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_7";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_7.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_8
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_8";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_8.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_9
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_9";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_9.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_break
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_break";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_break.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class typewriter_return
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "typewriter_return";
+		// filename, volume, pitch
+		sound[] = {"sounds\typewriter_return.ogg", 5, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class bongs1
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "bongs1";
+		// filename, volume, pitch
+		sound[] = {"sounds\bongs1.ogg", 1, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class bongs2
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "bongs2";
+		// filename, volume, pitch
+		sound[] = {"sounds\bongs2.ogg", 0.8, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class bongs3
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "bongs3";
+		// filename, volume, pitch
+		sound[] = {"sounds\bongs3.ogg", 0.8, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class bongs4
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "bongs4";
+		// filename, volume, pitch
+		sound[] = {"sounds\bongs4.ogg", 0.8, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class screams2
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "screams2";
+		// filename, volume, pitch
+		sound[] = {"sounds\screams2.ogg", 1.4, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+	class arkona_zimushka
+	{
+		// how the sound is referred to in the editor (e.g. trigger effects)
+		name = "arkona_zimushka";
+		// filename, volume, pitch
+		sound[] = {"sounds\arkona_zimushka.ogg", 2, 1};
+		// subtitle delay in seconds, subtitle text
+		titles[] = {1, ""};
+	};
+};
+
