@@ -7,6 +7,7 @@ class CfgFunctions {
 	#include "EC_tasks\cfgFunctions.hpp"
 	#include "player\cfgFunctions.hpp"
 	#include "server\cfgFunctions.hpp"
+	#include "PV_submarine\cfgFunctions.hpp"
 	// #include "FUPS\hearing_XEH.hpp"
 };
 
@@ -20,7 +21,11 @@ enableDebugConsole = 1;
 
 class CfgSounds
 {
-	sounds[] = {speech,typewriter_1,typewriter_2, bongs1, bongs2, bongs3, bongs4, screams2, arkona_zimushka};
+	#include "PV_submarine\cfgSounds.hpp"
+
+	sounds[] = {speech,typewriter_1,typewriter_2, arkona_zimushka};
+
+
 	class speech
 	{
 		// how the sound is referred to in the editor (e.g. trigger effects)
@@ -129,51 +134,7 @@ class CfgSounds
 		// subtitle delay in seconds, subtitle text
 		titles[] = {1, ""};
 	};
-	class bongs1
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bongs1";
-		// filename, volume, pitch
-		sound[] = {"sounds\bongs1.ogg", 1, 1};
-		// subtitle delay in seconds, subtitle text
-		titles[] = {1, ""};
-	};
-	class bongs2
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bongs2";
-		// filename, volume, pitch
-		sound[] = {"sounds\bongs2.ogg", 0.8, 1};
-		// subtitle delay in seconds, subtitle text
-		titles[] = {1, ""};
-	};
-	class bongs3
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bongs3";
-		// filename, volume, pitch
-		sound[] = {"sounds\bongs3.ogg", 0.8, 1};
-		// subtitle delay in seconds, subtitle text
-		titles[] = {1, ""};
-	};
-	class bongs4
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "bongs4";
-		// filename, volume, pitch
-		sound[] = {"sounds\bongs4.ogg", 0.8, 1};
-		// subtitle delay in seconds, subtitle text
-		titles[] = {1, ""};
-	};
-	class screams2
-	{
-		// how the sound is referred to in the editor (e.g. trigger effects)
-		name = "screams2";
-		// filename, volume, pitch
-		sound[] = {"sounds\screams2.ogg", 1.4, 1};
-		// subtitle delay in seconds, subtitle text
-		titles[] = {1, ""};
-	};
+	
 	class arkona_zimushka
 	{
 		// how the sound is referred to in the editor (e.g. trigger effects)

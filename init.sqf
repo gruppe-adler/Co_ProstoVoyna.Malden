@@ -61,8 +61,6 @@ explo_charge_inside_5
 
 
 
-
-
 if (!isDedicated) then {
 	_plankton = "#particlesource" createVehicleLocal (position player);
 	_plankton setParticleClass "PlanktonEffect";
@@ -80,8 +78,6 @@ buoy_2 setVectorDirAndUp [[0,-0.5,0.5],[0,0.5,0.5]];
 trawler addEventHandler ["killed", {_null = [_this select 0, "LEFT BACK", 120] call server_fnc_sinkShip;
 
 }];
-
- gamelogic action ["lightOn",  SDV_empty];
 
  /*---------------------------------------------------------------------------
  END SUBMARINE STUFF

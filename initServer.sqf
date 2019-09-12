@@ -17,23 +17,6 @@ sleep 2;
 _tlist = list _trg_stage1_objects;
 
 
-/* submarine sounds */
-bongs = ["bongs1","bongs2","bongs3","bongs4"];
-
-[]spawn {
-	while {alive opfor_submarine} do {
-	opfor_submarine say3d (bongs call BIS_fnc_selectRandom);
-	sleep random 5;
-	};
-};
-
-
-[]spawn {
-	while {alive opfor_submarine} do {
-	opfor_submarine say3d "screams2";
-	sleep 60;
-	};
-};
 
 
 waitUntil {sleep 1; INTRO_DONE};
@@ -69,19 +52,6 @@ setDate [2008, 10, 12, 22, 0];
 // todo: clean up former player vehicles
 
 
-/* ambient fire + smoke */
-_fires = [ambient_fire_1,ambient_fire_2,ambient_fire_3,ambient_fire_4,ambient_fire_5,ambient_fire_6,ambient_fire_7,ambient_fire_8,ambient_fire_9,ambient_fire_10,ambient_fire_11];
-
-for [{_i=0}, {_i<count _fires}, {_i=_i+1}] do
-{
-	_object = _fires select _i;
-	0 = [_object, "FIRE_BIG"] call server_fnc_fireAndSmoke;
-	0 = [_object, "SMOKE_BIG"] call server_fnc_fireAndSmoke;
-};
-
 
 // initialize intro speech, todo: add delay
 [_helis, _groups] call server_fnc_initSpeech;
-
-
-_spawned = [getMarkerPos "mrk_ind_airport","mrk_ind_airport",[8,1,6],["RANDOM", "SIMULATION:",1200]] call FUPS_fnc_spawn;
